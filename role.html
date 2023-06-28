@@ -9,7 +9,7 @@
     <meta name="description" content="Modern admin is super flexible, powerful, clean &amp; modern responsive bootstrap 4 admin template with unlimited possibilities with bitcoin dashboard." />
     <meta name="keywords" content="admin template, modern admin template, dashboard template, flat admin template, responsive admin template, web app, crypto dashboard, bitcoin dashboard" />
     <meta name="author" content="PIXINVENT" />
-    <title>SALT - Portfolio</title>
+    <title>SALT - Role</title>
     <link rel="apple-touch-icon" href="app-assets/images/ico/apple-icon-120.png" />
     <link rel="shortcut icon" type="image/x-icon" href="app-assets/images/ico/favicon.ico" />
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i%7CQuicksand:300,400,500,700" rel="stylesheet" />
@@ -35,6 +35,12 @@
     <!-- BEGIN: Custom CSS-->
     <link rel="stylesheet" type="text/css" href="/assets/css/style.css" />
     <!-- END: Custom CSS-->
+    <style>
+        .badge-custom {
+          margin-right: 10px;
+          box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        }
+    </style>
   </head>
   <!-- END: Head-->
 
@@ -254,11 +260,15 @@
         <div class="content-body">
 
            <div class="row">
+            <div class="col-md-12 mb-2">
+              <button type="button" class="btn btn-primary btn-min-width mr-1 mb-1">Add New Role</button>
+            </div>
+            
               <div class="col-md-12">
-                <h1 class="mb-2">Content Page Portfolio</h1>
+                <h1 class="mb-2">Page Role</h1>
                 <div class="card">
                   <div class="card-header">
-                      <h2 class="card-title">Content Section</h2>
+                      <h2 class="card-title">Role</h2>
                       <a class="heading-elements-toggle"><i class="la la-ellipsis-v font-medium-3"></i></a>
                      
                   </div>
@@ -270,29 +280,23 @@
                                   <thead>
                                       <tr>
                                           <th>No</th>
-                                          <th>Featured Image</th>
-                                          <th>Main Image</th>
-                                          <th>Title</th>
-                                          <th>Sub</th>
-                                          <th>Description</th>
-                                          <th>Content Image</th>
+                                          <th>Name User</th>
+                                          <th>Role</th>
                                           <th>Action</th>
                                       </tr>
                                   </thead>
                                   <tbody>
                                       <tr>
                                           <td scope="row">1</td>
-                                          <td><img src="app-assets/images/carousel/03.jpg" alt="salt" class="img-fluid" widtd="100"></td>
-                                          <td><img src="app-assets/images/carousel/03.jpg" alt="salt" class="img-fluid" widtd="100"></td>
-                                          <td>Everlastding Chic</td>
-                                          <td>@ Nortdsore</td>
-                                          <td>We strive to provide exceptional customer satisfaction tdrough efficient project...</td>
-                                          <td><img src="app-assets/images/carousel/03.jpg" alt="salt" class="img-fluid" widtd="100"></td>
+                                          <td>John</td>
+                                          <td><div class="badge badge-success badge-custom p-1">permission.create</div><div class="badge badge-success badge-custom p-1">permission.delete</div><div class="badge badge-success badge-custom p-1">permission.edit</div></td>
                                           <td>
                                             <button type="button" class="btn btn-warning btn-small mr-1 mb-1">Edit</button>
                                             <button type="button" class="btn btn-danger btn-small mr-1 mb-1">Delete</button>
                                           </td>                                         
                                       </tr>
+                                     
+                                     
                                   </tbody>
                               </table>
                           </div>
