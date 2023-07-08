@@ -253,51 +253,96 @@
         <div class="content-header row"></div>
         <div class="content-body">
 
+          <div class="row mb-2">
+            <div class="col-md-12">
+               <!-- <a href="portfolio-add.html" class="btn btn-success btn-small"></a> -->
+               <button type="button" class="btn btn-success btn-small mr-1 mb-1" data-toggle="modal" data-target="#large">Add Image</button>
+            </div>
+          </div>
+
           <div class="row">
               <div class="col-md-12">
-                  <form action="#">
-
-                  <div class="form-group">
-                      <label for="userinput6">Main Image</label>
-                      <input class="form-control border-primary" type="file" placeholder="file" id="userinput6">
-                  </div>
-
-                  <div class="form-group">
-                      <label>Title</label>
-                      <input class="form-control border-primary" id="userinput7" type="text" placeholder="Contact Number">
-                  </div>
-
-                   <div class="form-group">
-                      <label>Sub</label>
-                      <input class="form-control border-primary" id="userinput7" type="text" placeholder="Contact Number">
-                  </div>
-
-                   <div class="form-group">
-                      <label>Description</label>
-                      <input class="form-control border-primary" id="userinput7" type="text" placeholder="Contact Number">
-                  </div>
-
-                  <div class="form-group">
-                      <label for="userinput6">Content Image</label>
-                      <input class="form-control border-primary" type="file" placeholder="file" id="userinput6">
-                  </div>
-
-                   <div class="form-actions text-right">
-                        <a href="slider.html" class="btn btn-warning mr-1">
-                            <i class="ft-x"></i> Cancel
-                        </a>
-                        <button type="submit" class="btn btn-primary">
-                            <i class="la la-check-square-o"></i> Save
-                        </button>
-                    </div>
-
-                  </form>
+                   <div class="card-body">
+                            <div class="table-responsive">
+                              <table class="table">
+                                  <thead>
+                                      <tr>
+                                          <th>No</th>
+                                          <th>Content Image</th>
+                                          <th>Action</th>
+                                      </tr>
+                                  </thead>
+                                  <tbody>
+                                      <tr>
+                                          <td scope="row">1</td>
+                                          <td><img src="app-assets/images/carousel/03.jpg" alt="salt" class="img-fluid" width="100"></td>
+                                          <td>
+                                            <!-- <a href="portfolio-add.html" class="btn btn-warning btn-small mr-1 mb-1">Edit</a> -->
+                                            <button type="button" class="btn btn-danger btn-small mr-1 mb-1">Delete</button>
+                                          </td>                                         
+                                      </tr>
+                                      <tr>
+                                          <td scope="row">2</td>
+                                          <td><img src="app-assets/images/carousel/03.jpg" alt="salt" class="img-fluid" width="100"></td>
+                                          <td>
+                                            <!-- <a href="portfolio-add.html" class="btn btn-warning btn-small mr-1 mb-1">Edit</a> -->
+                                            <button type="button" class="btn btn-danger btn-small mr-1 mb-1">Delete</button>
+                                          </td>                                         
+                                      </tr>
+                                  </tbody>
+                              </table>
+                          </div>
+                          </div>
               </div>
+          </div>
+
+          <div class="row mb-2">
+            <div class="col-md-12 d-flex justify-content-end">
+               <a href="portfolio.html" class="btn btn-warning">Back</a>
+            </div>
           </div>
         </div>
       </div>
     </div>
     <!-- END: Content-->
+
+
+    <!-- Modal -->
+    <div class="modal fade text-left" id="large" tabindex="-1" role="dialog" aria-labelledby="myModalLabel17" aria-hidden="true">
+      <div class="modal-dialog modal-lg" role="document">
+          <div class="modal-content">
+              <div class="modal-header">
+                  <h4 class="modal-title" id="myModalLabel17">Basic Modal</h4>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                  </button>
+              </div>
+              <div class="modal-body">
+                <div class="row match-height">
+                  <div class="col-lg-12 col-md-12">
+                      <div class="card">
+                          <div class="card-header">
+                              <label class="card-title" for="exampleInputFile">File input</label>
+                          </div>
+
+                          <div class="card-body">
+                              <fieldset class="form-group">
+                                  <input type="file" class="form-control-file" id="exampleInputFile">
+                              </fieldset>
+                          </div>
+
+                      </div>
+                  </div>
+                </div>
+              </div>
+              <div class="modal-footer">
+                  <button type="button" class="btn grey btn-outline-secondary" data-dismiss="modal">Close</button>
+                  <button type="button" class="btn btn-outline-primary">Save changes</button>
+              </div>
+          </div>
+      </div>
+    </div>
+     <!-- END: Modal -->
 
     <div class="sidenav-overlay"></div>
     <div class="drag-target"></div>
